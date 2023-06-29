@@ -1,5 +1,5 @@
-import PusherServer from 'pusher'
-import PusherClient from 'pusher-js'
+import PusherServer from 'pusher';
+import PusherClient from 'pusher-js';
 
 export const pusherServer = new PusherServer({
   appId: process.env.PUSHER_APP_ID!,
@@ -16,6 +16,6 @@ export const pusherClient = new PusherClient(
       endpoint: '/api/pusher/auth',
       transport: 'ajax',
     },
-    cluster: 'eu',
+    cluster: 'ap2',
   }
 );
